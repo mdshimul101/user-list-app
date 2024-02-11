@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-
+import { IoMdArrowRoundBack } from "react-icons/io";
+import { Link, useParams } from "react-router-dom";
 const UserDetails = () => {
   const { id } = useParams();
   const [user, setUser] = useState(null);
@@ -67,6 +67,13 @@ const UserDetails = () => {
           </p>
         </div>
       </div>
+
+      <Link to="/">
+        <div className="mt-5 flex items-center  text-xl font-semibold text-gray-500">
+          <IoMdArrowRoundBack />
+          <p className="ml-2 mb-1">Previous page</p>
+        </div>
+      </Link>
     </div>
   );
 };
