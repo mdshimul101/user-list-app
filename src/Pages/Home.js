@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import FilterUser from "../Components/FilterUser";
+import UserCard from "../Components/UserCard";
 
 const Home = () => {
   const [searchData, setSearchData] = useState("");
@@ -14,6 +15,7 @@ const Home = () => {
         sortData={sortData}
         setSortData={setSortData}
       ></FilterUser>
+      <UserCard></UserCard>
     </div>
   );
 };
