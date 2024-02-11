@@ -28,6 +28,25 @@ const Home = () => {
       );
   }, []);
 
+  const sortedUsers = [...items].sort((a, b) => {
+    switch (sortData) {
+      case "name":
+        return a.firstName.localeCompare(b.firstName);
+      case "email":
+        return a.email.localeCompare(b.email);
+      case "company":
+        return a.company.name.localeCompare(b.company.name);
+      default:
+        return 0;
+    }
+  });
+
+  const filteredUsers = sortedUsers.filter(
+    (item) =>
+      item.firstName.toLowerCase().includes(searchData.toLowerCase()) ||
+      item.lastName.toLowerCase().includes(searchData.toLowerCase())
+  );
+
   if (!isLoaded) {
     return (
       <div className="text-center mt-20 text-sky-600">
@@ -45,7 +64,7 @@ const Home = () => {
         setSortData={setSortData}
       ></FilterUser>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-24 justify-center">
-        {items.map((item) => (
+        {filteredUsers.map((item) => (
           <UserCard key={item.id} item={item}></UserCard>
         ))}
       </div>
