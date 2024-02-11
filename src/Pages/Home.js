@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
+import FilterUser from "../Components/FilterUser";
 
 const Home = () => {
+  const [searchData, setSearchData] = useState("");
+  const [sortData, setSortData] = useState("");
+
+  console.log("Home data", searchData, sortData);
   return (
-    <div>
-      <h1>Home</h1>
+    <div className="space-y-4 my-20">
+      <FilterUser
+        searchData={searchData}
+        setSearchData={setSearchData}
+        sortData={sortData}
+        setSortData={setSortData}
+      ></FilterUser>
     </div>
   );
 };
