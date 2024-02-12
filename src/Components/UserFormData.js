@@ -67,7 +67,7 @@ const UserFormData = ({ items, setItems }) => {
           Make A New User
         </h1>
         <div className="flex justify-center items-center ">
-          <span className="border-b-2 border-sky-600 w-20 group-hover:w-32 ease-out duration-300  text-center mt-3"></span>
+          <span className="border-b-2 border-sky-400 w-20 group-hover:w-32 ease-out duration-300  text-center mt-3"></span>
         </div>
       </div>
 
@@ -82,7 +82,7 @@ const UserFormData = ({ items, setItems }) => {
                 value={newUser.firstName}
                 onChange={handleInputChange}
                 required
-                className="pl-4 py-3 mb-4 border border-gray-200 w-full hover:border-sky-400 duration-300"
+                className="pl-4 py-3 mb-4 border border-gray-200 w-full hover:border-sky-300 duration-300"
               />
 
               <input
@@ -92,7 +92,7 @@ const UserFormData = ({ items, setItems }) => {
                 value={newUser.lastName}
                 onChange={handleInputChange}
                 required
-                className="pl-4 py-3 mb-4 border border-gray-200 w-full hover:border-sky-400 duration-300"
+                className="pl-4 py-3 mb-4 border border-gray-200 w-full hover:border-sky-300 duration-300"
               />
 
               <input
@@ -102,7 +102,7 @@ const UserFormData = ({ items, setItems }) => {
                 value={newUser.email}
                 onChange={handleInputChange}
                 required
-                className="pl-4 py-3 mb-4 border border-gray-200 w-full hover:border-sky-400 duration-300"
+                className="pl-4 py-3 mb-4 border border-gray-200 w-full hover:border-sky-300 duration-300"
               />
 
               <input
@@ -112,7 +112,7 @@ const UserFormData = ({ items, setItems }) => {
                 value={newUser.image}
                 onChange={handleInputChange}
                 required
-                className="pl-4 py-3 mb-4 border border-gray-200 w-full hover:border-sky-400 duration-300"
+                className="pl-4 py-3 mb-4 border border-gray-200 w-full hover:border-sky-300 duration-300"
               />
             </div>
             <div className="w-full mx-auto md:w-10/12 lg:w-[47%]">
@@ -123,7 +123,7 @@ const UserFormData = ({ items, setItems }) => {
                 value={newUser.company.name}
                 onChange={handleInputChange}
                 required
-                className="pl-4 py-3 mb-4 border border-gray-200 w-full hover:border-sky-400 duration-300"
+                className="pl-4 py-3 mb-4 border border-gray-200 w-full hover:border-sky-300 duration-300"
               />
               <input
                 type="text"
@@ -132,7 +132,7 @@ const UserFormData = ({ items, setItems }) => {
                 value={newUser.address.city}
                 onChange={handleInputChange}
                 required
-                className="pl-4 py-3 mb-4 border border-gray-200 w-full hover:border-sky-400 duration-300"
+                className="pl-4 py-3 mb-4 border border-gray-200 w-full hover:border-sky-300 duration-300"
               />
               <input
                 type="text"
@@ -141,11 +141,11 @@ const UserFormData = ({ items, setItems }) => {
                 value={newUser.address.address}
                 onChange={handleInputChange}
                 required
-                className="pl-4 py-3 mb-4 border border-gray-200 w-full hover:border-sky-400 duration-300"
+                className="pl-4 py-3 mb-4 border border-gray-200 w-full hover:border-sky-300 duration-300"
               />
             </div>
           </div>
-          <div className="flex justify-center w-6/12 md:w-3/12 lg:w-2/12 mx-auto items-center mt-10 bg-sky-300 hover:bg-sky-500 font-semibold text-white">
+          <div className="flex justify-center w-6/12 md:w-3/12 lg:w-2/12 mx-auto items-center mt-10 bg-sky-300 hover:bg-sky-400 font-semibold text-white">
             <FaRegUser className="hidden md:block" />
 
             <button type="submit" className="px-3 py-2">

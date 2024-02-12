@@ -18,7 +18,7 @@ const FilterUser = ({ searchData, setSearchData, setSortData }) => {
           className="input input-bordered join-item mx-auto w-[79vw] md:w-auto focus:outline-none"
           placeholder="Search..."
         />
-        <button className="btn join-item  bg-[#0D6EFD] text-white hover:text-black">
+        <button className="btn join-item  bg-sky-300 text-white hover:text-black">
           {" "}
           <FaSearch />
         </button>

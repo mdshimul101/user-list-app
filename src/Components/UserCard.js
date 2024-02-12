@@ -11,12 +11,12 @@ const UserCard = ({ item }) => {
         className="w-16 h-16 rounded-full mx-auto my-2"
       />
       <Link to={`/item/${item.id}`}>
-        <h3 className="text-[#212529] text-center text-2xl font-medium mt-4 hover:text-sky-700">
+        <h3 className="text-gray-600 text-center text-2xl font-medium mt-4 hover:text-sky-400">
           {firstName} <span> </span>
           {lastName}
         </h3>
         <div className="flex justify-center items-center ">
-          <span className="border-b-2 border-sky-600 w-0 group-hover:w-32 ease-out duration-300  text-center my-2"></span>
+          <span className="border-b-2 border-sky-400 w-0 group-hover:w-32 ease-out duration-300  text-center my-2"></span>
         </div>
       </Link>
       <p className="text-gray-600 my-3">
