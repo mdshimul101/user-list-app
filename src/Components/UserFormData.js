@@ -145,10 +145,12 @@ const UserFormData = ({ items, setItems }) => {
               />
             </div>
           </div>
-          <div className="flex justify-center w-5/12 md:w-3/12 mx-auto items-center mt-10 bg-sky-300 hover:bg-sky-500 font-semibold text-white">
-            <FaRegUser />
+          <div className="flex justify-center w-6/12 md:w-3/12 lg:w-2/12 mx-auto items-center mt-10 bg-sky-300 hover:bg-sky-500 font-semibold text-white">
+            <FaRegUser className="hidden md:block" />
 
-            <button className="px-3 py-2">Add User</button>
+            <button type="submit" className="px-3 py-2">
+              Add User
+            </button>
           </div>
         </form>
       </div>

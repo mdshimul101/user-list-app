@@ -42,7 +42,7 @@ const UserDetails = () => {
             alt="Avatar"
             className="w-16 h-16 rounded-full mx-auto my-2"
           />
-          <h3 className="text-[#212529] text-center text-xl md:text-2xl font-medium my-5 hover:text-blue-500">
+          <h3 className="text-[#212529] text-center text-xl md:text-2xl font-medium my-5 hover:text-sky-600">
             {user.firstName} <span> </span>
             {user.lastName}
           </h3>
