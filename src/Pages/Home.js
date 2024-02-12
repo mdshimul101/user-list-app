@@ -60,7 +60,6 @@ const Home = () => {
       <FilterUser
         searchData={searchData}
         setSearchData={setSearchData}
-        sortData={sortData}
         setSortData={setSortData}
       ></FilterUser>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-24 justify-center">

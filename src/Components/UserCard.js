@@ -11,7 +11,7 @@ const UserCard = ({ item }) => {
         className="w-16 h-16 rounded-full mx-auto mb-2"
       />
       <Link to={`/item/${item.id}`}>
-        <h3 className="text-[#212529] text-center text-2xl font-medium my-5 hover:text-blue-700">
+        <h3 className="text-[#212529] text-center text-2xl font-medium my-5 hover:text-blue-500">
           {firstName} <span> </span>
           {lastName}
         </h3>

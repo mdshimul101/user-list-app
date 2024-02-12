@@ -1,15 +1,13 @@
 import React from "react";
 import { FaSearch } from "react-icons/fa";
-const FilterUser = ({ searchData, setSearchData, sortData, setSortData }) => {
+const FilterUser = ({ searchData, setSearchData, setSortData }) => {
   // get searchTerm
   const handleSearch = (event) => {
     setSearchData(event.target.value);
-    console.log(event.target.value);
   };
   // get sort by value
   const handleSortUserChange = (event) => {
     setSortData(event.target.value);
-    console.log(event.target.value);
   };
   return (
     <div className="space-y-2 md:flex md:flex-wrap gap-6 justify-end">

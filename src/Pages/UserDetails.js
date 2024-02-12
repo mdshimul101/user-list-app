@@ -37,19 +37,19 @@ const UserDetails = () => {
         {user.firstName} {user.lastName} Details
       </h3>
       <div className="border hover:border-gray-500 duration-200 rounded-lg p-4 md:p-10 block md:flex ">
-        <div className="basis-1/2">
+        <div className="basis-1/2 border-b-sky-200 border-r-sky-200 border-b-2 md:border-b-0 md:border-r-2">
           <img
             src={user.image}
             alt="Avatar"
             className="w-16 h-16 rounded-full mx-auto mb-2"
           />
-          <h3 className="text-[#212529] text-center text-xl md:text-2xl font-medium my-5 hover:text-blue-700">
+          <h3 className="text-[#212529] text-center text-xl md:text-2xl font-medium my-5 hover:text-blue-500">
             {user.firstName} <span> </span>
             {user.lastName}
           </h3>
         </div>
 
-        <div className="basis-1/2 mt-4">
+        <div className="basis-1/2 mt-4 ml-4">
           <p className="text-gray-600 mb-3">
             <span className="text-gray-700 font-semibold">Email : </span>{" "}
             {user.email}
@@ -69,7 +69,7 @@ const UserDetails = () => {
       </div>
 
       <Link to="/">
-        <div className="mt-5 flex items-center  text-xl font-semibold text-gray-500">
+        <div className="mt-10 flex items-center justify-center border rounded-full  w-5/12 md:w-4/12 lg:w-3/12 text-center border-sky-500  md:text-xl font-semibold text-sky-500">
           <IoMdArrowRoundBack />
           <p className="ml-2 mb-1">Previous page</p>
         </div>
