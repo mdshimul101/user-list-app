@@ -61,10 +61,15 @@ const UserFormData = ({ items, setItems }) => {
     });
   };
   return (
-    <div className="">
-      <h1 className="mt-20 md:mt-32 text-gray-500 text-center text-xl md:text-3xl font-semibold">
-        Make A New User
-      </h1>
+    <div className="group">
+      <div>
+        <h1 className="mt-20 md:mt-32 text-gray-600 text-center text-2xl md:text-3xl font-semibold">
+          Make A New User
+        </h1>
+        <div className="flex justify-center items-center ">
+          <span className="border-b-2 border-sky-600 w-20 group-hover:w-32 ease-out duration-300  text-center mt-3"></span>
+        </div>
+      </div>
 
       <div className="mt-10 bg-sky-50 p-10">
         <form onSubmit={handleSubmit} action="">

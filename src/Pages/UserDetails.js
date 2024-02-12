@@ -32,7 +32,7 @@ const UserDetails = () => {
 
   return (
     <div className="space-y-4 my-20">
-      <h3 className="text-center font-semibold text-xl md:text-2xl text-sky-600">
+      <h3 className="my-6 text-center font-semibold text-2xl md:text-3xl text-gray-600">
         {user.firstName} {user.lastName} Details
       </h3>
       <div className="border hover:border-gray-500 duration-200 rounded-lg p-4 md:p-10 block md:flex ">
@@ -40,7 +40,7 @@ const UserDetails = () => {
           <img
             src={user.image}
             alt="Avatar"
-            className="w-16 h-16 rounded-full mx-auto mb-2"
+            className="w-16 h-16 rounded-full mx-auto my-2"
           />
           <h3 className="text-[#212529] text-center text-xl md:text-2xl font-medium my-5 hover:text-blue-500">
             {user.firstName} <span> </span>
@@ -68,9 +68,9 @@ const UserDetails = () => {
       </div>
 
       <Link to="/">
-        <div className="mt-10 flex items-center justify-center border rounded-full  w-5/12 md:w-4/12 lg:w-3/12 text-center border-sky-500  md:text-xl font-semibold text-sky-500">
+        <div className="mt-10 flex items-center justify-center border rounded-full  w-4/12 md:w-3/12 lg:w-2/12 text-center border-sky-500  md:text-xl font-semibold text-sky-500">
           <IoMdArrowRoundBack />
-          <p className="ml-2 mb-1">Previous page</p>
+          <p className="ml-2 mb-1">Back</p>
         </div>
       </Link>
     </div>
