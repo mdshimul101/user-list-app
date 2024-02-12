@@ -29,7 +29,6 @@ const UserDetails = () => {
       </div>
     );
   }
-  console.log(user);
 
   return (
     <div className="space-y-4 my-20">

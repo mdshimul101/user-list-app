@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import FilterUser from "../Components/FilterUser";
 import UserCard from "../Components/UserCard";
+import UserFormData from "../Components/UserFormData";
 
 const Home = () => {
   const [searchData, setSearchData] = useState("");
@@ -19,7 +20,6 @@ const Home = () => {
         (result) => {
           setIsLoaded(true);
           setItems(result.users);
-          console.log(result.users);
         },
         (error) => {
           setIsLoaded(true);
@@ -28,6 +28,7 @@ const Home = () => {
       );
   }, []);
 
+  // Sort Users by name, email and company
   const sortedUsers = [...items].sort((a, b) => {
     switch (sortData) {
       case "name":
@@ -41,6 +42,7 @@ const Home = () => {
     }
   });
 
+  // filter Users by SearchTerm
   const filteredUsers = sortedUsers.filter(
     (item) =>
       item.firstName.toLowerCase().includes(searchData.toLowerCase()) ||
@@ -67,6 +69,8 @@ const Home = () => {
           <UserCard key={item.id} item={item}></UserCard>
         ))}
       </div>
+
+      <UserFormData items={items} setItems={setItems}></UserFormData>
     </div>
   );
 };
