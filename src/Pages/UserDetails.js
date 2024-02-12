@@ -68,9 +68,9 @@ const UserDetails = () => {
       </div>
 
       <Link to="/">
-        <div className="mt-10 flex items-center justify-center border rounded-full  w-4/12 md:w-3/12 lg:w-2/12 text-center border-sky-500  md:text-xl font-semibold text-sky-500">
+        <div className="mt-10 py-2 flex items-center justify-center border rounded-full  w-4/12 md:w-3/12 lg:w-2/12 text-center border-sky-500  md:text-xl font-semibold text-sky-500">
           <IoMdArrowRoundBack />
-          <p className="ml-2">Back</p>
+          <button className="ml-2">Back</button>
         </div>
       </Link>
     </div>
