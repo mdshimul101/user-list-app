@@ -45,8 +45,12 @@ const Home = () => {
   // filter Users by SearchTerm
   const filteredUsers = sortedUsers.filter(
     (item) =>
-      item.firstName.toLowerCase().includes(searchData.toLowerCase()) ||
-      item.lastName.toLowerCase().includes(searchData.toLowerCase())
+      item.firstName
+        .concat(" ", item.lastName)
+        .toLowerCase()
+        .includes(searchData.toLocaleLowerCase())
+    // item.firstName.toLowerCase().includes(searchData.toLowerCase()) ||
+    // item.lastName.toLowerCase().includes(searchData.toLowerCase())
   );
 
   if (!isLoaded) {
